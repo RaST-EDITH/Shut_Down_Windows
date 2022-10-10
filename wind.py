@@ -4,6 +4,7 @@ import customtkinter as ctk
 from PIL import Image ,ImageTk
 import os
 
+# shut window
 def shut_down():
     os.system("shutdown /s /t 0")
     root.destroy()
