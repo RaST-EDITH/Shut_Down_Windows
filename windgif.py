@@ -22,10 +22,10 @@ class ImageLabel(ctk.CTkLabel):
         if isinstance(im, str):
             im = Image.open(im)
         frames = []
-        self.place_configure(anchor='nw')
+        self.place_configure(x=2,y=2,anchor='nw')
         try:
             for i in count(1):
-                frames.append(ImageTk.PhotoImage(im.copy().resize((1000,525), Image.ANTIALIAS)))
+                frames.append(ImageTk.PhotoImage(im.copy().resize((996,521), Image.ANTIALIAS)))
                 im.seek(i)
         except EOFError:
             pass
@@ -60,7 +60,7 @@ hgt = 420
 root.title("Shut Down Windows")
 root.iconbitmap(r"C:\Users\ASUS\Win pro\irman.ico")
 root.resizable(False,False)
-my_can=Canvas(root , width=wid , height=hgt, bg="black", highlightcolor="#3c5390", borderwidth=0 )
+my_can=Canvas(root , width=wid , height=hgt, bg="black", highlightbackground="#cf6c34", highlightthickness=3 )
 my_can.pack( fill="both", expand=True)
 lbl = ImageLabel(my_can)
 lbl.pack()
