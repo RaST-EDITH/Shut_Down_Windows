@@ -17,7 +17,7 @@ The "Custom Shut Down Window" project combines the power of Python, GUI design, 
 
 ![App Screenshot](https://i.postimg.cc/Pxsd78GD/shut.jpg)
 
-![App Screenshot](https://i.postimg.cc/52pV3kgZ/shut2.jpg)
+![App Screenshot](https://i.postimg.cc/P5t5MDWF/shut2-2.jpg)
 
 
 ## 🔗 Links
