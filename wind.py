@@ -29,7 +29,7 @@ root.resizable(False,False)
 my_can=Canvas(root , width=wid , height=hgt, bg="black", highlightcolor="#3c5390", borderwidth=0 )
 my_can.pack( fill="both", expand=True)
 img_1 = Image.open(r"C:\Users\ASUS\Win pro\iron_back.jpg")
-pht_1 = ImageTk.PhotoImage(img_1.resize((1000,525), Image.ANTIALIAS))
+pht_1 = ImageTk.PhotoImage(img_1.resize((1000,525), Image.Resampling.LANCZOS))
 my_can.create_image( 0, 0 , image=pht_1 , anchor="nw")
 
 shut = ctk.CTkButton(master=root, text="Shut Down", text_font=("Berlin Sans FB",20), width=150, height=20, corner_radius=10,
