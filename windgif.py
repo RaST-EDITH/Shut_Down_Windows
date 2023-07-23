@@ -25,7 +25,7 @@ class ImageLabel(ctk.CTkLabel):
         self.place_configure(x=2,y=2,anchor='nw')
         try:
             for i in count(1):
-                frames.append(ImageTk.PhotoImage(im.copy().resize((996,521), Image.ANTIALIAS)))
+                frames.append(ImageTk.PhotoImage(im.copy().resize((996,521), Image.Resampling.LANCZOS)))
                 im.seek(i)
         except EOFError:
             pass
